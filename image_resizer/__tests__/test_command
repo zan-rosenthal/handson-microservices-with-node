@@ -1,0 +1,3 @@
+curl -X POST -H 'Content-Type: image/png' \                                                                                                                   ✔  3362  17:50:35
+ --data-binary @../../slack.png \
+ http://localhost:3000/uploads/slack.png
