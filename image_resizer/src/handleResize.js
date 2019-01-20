@@ -17,7 +17,7 @@ const baseImage = ({ height, width }) => sharp({
 
 export default ({ query, params }, res) => {
   const format = params[0] == "png" ? "png" : "jpeg";
-  console.log('QUERY', query)
+
   baseImage(query)
     .overlayWith(thumbnail(query))[format]().pipe(res);
   }
