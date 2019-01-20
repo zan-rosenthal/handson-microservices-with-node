@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs'
 
 export default (req, res) =>  {
-  console.log('HANDLING UPLOAD', req.body)
+  console.log(req.file)
   let image = req.params.image.toLowerCase()
 
   if (!image.match(/\.(png|jpg)$/)) {
