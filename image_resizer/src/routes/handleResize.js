@@ -1,4 +1,4 @@
-import thumbnail from "./thumbnail.js";
+import thumbnail from "../thumbnail.js";
 
 import sharp from "sharp";
 
